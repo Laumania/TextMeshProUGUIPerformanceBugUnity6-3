@@ -9,9 +9,11 @@ public class ListViewUIController : MonoBehaviour
 
     public void Populate()
     {
+        Debug.Log("BEGIN POPULATE");
         for (int i = 0; i < 300; i++)
         {
             Instantiate(_listItemPrefab, _itemContainer);
         }
+        Debug.Log("FINISH POPULATE");
     }
 }
