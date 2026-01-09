@@ -7,8 +7,11 @@ public class ListViewUIController : MonoBehaviour
     [SerializeField]
     private Transform _itemContainer;
 
-    public void AddNewItem()
+    public void Populate()
     {
-        Instantiate(_listItemPrefab, _itemContainer);
+        for (int i = 0; i < 300; i++)
+        {
+            Instantiate(_listItemPrefab, _itemContainer);
+        }
     }
 }
